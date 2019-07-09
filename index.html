@@ -1,14 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html xmlns="https://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="千城千舍,小茶姑娘民宿，小茶姑娘分布位置，民宿预定" />
+<meta name="description" content="千城千舍,小茶姑娘民宿，小茶姑娘分布位置，民宿预定" />
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
-<meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
-<meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
 <title>百度地图API自定义地图</title>
 <!--引用百度地图API-->
 <style type="text/css">
-    html,body{margin:0;padding:0;}
+    html,body{margin:0;padding:0;font-size:100px;}
 /*地图标题*/
 .BMap_bubble_title {
     color: #e48812;
@@ -22,12 +22,12 @@
 /* 消息内容 */
 .BMap_bubble_content {
     background: #fff;
-    padding-left:10px;
-    padding-top:5px;
-    padding-bottom:10px;
-    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    font-size: 12px;
     line-height: 22px;
-    color: #523926c7;
+    color: #8c5b36c7;
     font-weight: 600;
 }
 /* 内容 */
@@ -65,15 +65,13 @@
 .head{
     position: fixed;
     top: 10px;
-    left: 0;
     right: 0;
-    margin: auto;
-    text-align: center;
-    color: #9a5c2cc7;
+    text-align: right;
+    color: #a5582a;
     font-weight: 600;
-    font-size: 24px;
-    background: #ffffff94;
-    width: 400px;
+    font-size: 18px;
+    background: #f5f1f194;
+    width: 250px;
 }
 </style>
 <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=wqBXfIN3HkpM1AHKWujjCdsi&s=1"></script>
@@ -96,7 +94,7 @@
        }
        function createMap() {
            map = new BMap.Map("map");       //经度      //纬度    //缩放比例
-           map.centerAndZoom(new BMap.Point(120.1617445782,30.2799186759), 9); 
+           map.centerAndZoom(new BMap.Point(120.1617445782,30.2799186759), 8); 
            
        }
        function setMapEvent() {
@@ -138,7 +136,7 @@
                     padding:"5px",
                     border :"0", 
                     fontWeight :"bold" ,
-                    borderRadius:"5px"
+                    borderRadius:"14px"
                 });
                 var opts = {
                    width: 210,
